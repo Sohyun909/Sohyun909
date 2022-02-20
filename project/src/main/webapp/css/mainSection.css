@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* section css */
+#mainShow {
+	margin-top: 10px;
+	overflow: hidden;
+	clear: both;
+}
+
+.carousel img {
+	width: 100%;
+	height: 500px;
+	cursor: pointer;
+}
+
+.timeInfo {
+	display: flex;
+	direction: row;
+	margin-top: 80px;
+	padding-left: 40px;
+	font-weight: bold;
+	font-size: large;
+	padding-bottom: 100px;
+}
+
+.timeInfo img{
+	margin-right: 15px;
+}
+.subShow {
+	position: relative;
+	margin-top: 20px;
+	width : 1200px;
+	margin: 0 auto;
+	height: 350px;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+
+
+.showList {
+	position: absolute;
+	left: 0;
+	top:0;
+	padding-bottom: 100px;
+}
+
+
+.showList.animated{
+	transition: 0.5s ease-out;
+}
+
+
+.showList li {
+	list-style: none;
+ 	float: left; 
+	width: 270px;
+	height: 350px;
+	
+}
+
+.showList li:not(:last-child){
+	margin-right: 35px;
+}
+
+.showList img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.moveShowImg {
+	text-align: right;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.moveShowImg img {
+	width: 40px;
+	margin-right:30px;
+	cursor: pointer;
+}
+
+
+.notiDetail{
+	margin-top: 30px; 
+	margin-left: 40px;
+}
+#noti li, #noti li a{
+	list-style: none;
+	display: contents;
+	text-decoration: none;
+	color: black;
+	
+}
+#notiCategory {
+	font-weight: bold;
+}
+

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*{font-family:"G마켓 산스 TTF"}
+
+body {
+	font-size:100%;
+	line-height: 1.5;
+	font-family: 'Noto Sans KR', dotum, '돋움', verdana, arial, sans-serif;
+	color: white;
+	font-weight: 400;
+	letter-spacing: -.1px;
+	box-sizing: border-box;
+}
+
+.header {
+	grid-area: header;;
+}
+
+.main {
+	grid-area: main;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.grid-container {
+	display: grid;
+	width: 85%;
+	margin: 20px auto;
+	grid-template-rows: 20% 60% 20%;
+	height: 100%;
+	grid-gap: 30px;
+	grid-template-areas: "header header header" "main   main    main "
+		"footer footer footer";
+	place-content: start space-evenly;	
+}
+
+@media all and (max-width : 575px) {
+	.container {
+		grid-template-rows: 20% 60% 20%;
+		height: 100%;
+		grid-gap: 10px;
+		grid-template-areas: "header" "main" "footer";
+	}
+}

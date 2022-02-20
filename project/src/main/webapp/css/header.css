@@ -1,0 +1,150 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "G마켓 산스 TTF";
+	
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+	background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: black;
+}
+
+ .bodyContainer {
+	background-image: url("../images/bg10.svg");
+		background-size:100%;
+		background-repeat: no-repeat;
+} 
+
+.container {
+	text-align: left;
+	width: 85%;
+	margin: 20px auto;
+}
+
+header {
+	display: flex;
+	width: 85%;
+	margin: 0px auto;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	
+}
+
+.logo img {
+	width: 200px;
+	height: 200px;
+	justify-content: flex-start;
+	cursor: pointer;
+	
+}
+
+.navItem {
+	margin-top: 50px;
+	list-style: none;
+	float: left;
+	padding-right: 70px;
+	text-align: center;
+}
+
+.navItem a {
+	color: #011931;
+	font-size: large;
+	font-weight: bold;
+	text-decoration: none;
+	flex-shrink: 1;
+}
+
+.join {
+	margin-top: 50px;
+	flex-shrink: 2;
+}
+
+.join input[type="button"] {
+	margin-left: 20px;
+}
+
+.join img {
+	width: 75px;
+	height: 60px;
+}
+
+
+.join input[type="button"], #myModal {
+	color: #011931;
+	font-size: small;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 20px;
+	border-radius: 100px;
+	background-color: #E7E7E2;
+	border: none;
+	cursor: pointer;
+}
+
+
+.dropdown {
+	list-style: none;
+	display: none;
+	background-color: transparent;
+	animation: 0.5s ease showing;
+	padding-left: 0;
+}
+
+.dropdown li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+
+.navItem:hover .dropdown {
+	display: block;
+	padding-top: 10px;
+}
+
+@keyframes showing {
+from { transform:scaleY(0);
+	
+}
+to {
+	transform: scaleY(1);
+}
+
+
+}
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8, #dd9, #dd10, #dd11, #dd12, #dd13 {
+	text-decoration: none;
+	font-weight: bold;
+	color: #011931;
+	font-size: medium;
+	padding-top: 10px;
+}
+
+#dd1:hover, #dd2:hover, #dd3:hover, #dd4:hover, #dd5:hover, #dd6:hover,
+	#dd7:hover, #dd8:hover, #dd9:hover, #dd10:hover, #dd11:hover, #dd12:hover, #dd13:hover {
+	color: #E7E7E2;
+}
+
+#myModal {
+	margin-left: 15px;
+}
+
+.modal-body {
+	padding: 2rem;
+    text-align: center;
+} 
+
+.modal-body input[type="text"]{
+	width: 300px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding: 0 20px;
+}

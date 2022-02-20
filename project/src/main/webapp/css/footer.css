@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* footer css */
+
+* {
+		font-family: "G마켓 산스 TTF";
+	}
+	
+.footer {
+	display: flex;
+	direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	text-decoration: none;
+}
+
+.ourInfo p {
+	font-size: small;
+	padding-left: 30px;
+	font-weight: bold;
+	
+}
+.ourInfo a {
+	padding-left: 30px;
+	
+}
+
+.footerContainer {   
+	background-image: url("../images/bgfooter.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: bottom;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    padding-right:150px;
+    align-items: flex-end;
+}
+
+.footerContainer a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+    font-size: small;
+	padding-left: 30px;
+	font-weight: bold;
+}
